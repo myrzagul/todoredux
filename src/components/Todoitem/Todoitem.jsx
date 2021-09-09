@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import {TodoItemWrapper} from "./TodoStyles"
 
 function Todoitem (props) {

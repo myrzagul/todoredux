@@ -2,13 +2,11 @@ import './App.css';
 import Todoitem from "./components/Todoitem/Todoitem";
 import { Button, Input } from "./Styles";
 
-
-
 function App() {
   return (
     <div className="App">
       <header>
-        <input type="text" placeholder="Input Todo" />
+        <Input type="text" placeholder="Input Todo" />
         <Button>Save</Button>
         </header>
         <section>
