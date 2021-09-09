@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Todoitem from "./components/Todoitem/Todoitem";
+import { Button, Input } from "./Styles";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>
+        <input type="text" placeholder="Input Todo" />
+        <Button>Save</Button>
+        </header>
+        <section>
+          {
+          [1,2,3].map(() => <Todoitem task="Todo Item" />)
+          }   
+        </section>
     </div>
-  );
+      );
 }
 
-export default App;
+      export default App;
